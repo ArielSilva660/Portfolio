@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/Logo.png">
+    <title>Portfólio | Ariel Silva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quem-sou">Quem Sou</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quem-sou">Quem Sou</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+        <div class="btn-mobile">
+            <ion-icon name="grid-outline"></ion-icon>
+        </div>
+    </header>
+
+    <main id="home">
+        <div class="container">
+            <div class="icons">
+                <a target="_blank" href="https://www.instagram.com/vlg_ariel_silva/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a  target="_blank" href="https://www.facebook.com/profile.php?id=100083736440874"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a  target="_blank" href="https://github.com/ArielSilva660"><ion-icon name="logo-github"></ion-icon></a>
+                <a  target="_blank" href=""><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <div class="title">
+                <h1>Ariel Silva</h1>
+                <h2>desenvolvedor</h2>
+                <h3>desenvolvedor de Front-end</h3>
+            </div>
+        </div>
+    </main>
+
+    <section id="quem-sou">
+        <div class="container">
+            <div class="title">
+                <h1>Sou desenvolvedor de Front-end</h1>
+                <p>Olá sou Ariel silva tenho 14 anos, Sou estudante Front-end, Backend ,Lua e JavaScript</p>
+                <div class="box-title">
+                    <p>60%</p>
+                    <div class="b1"><div class="b2"></div></div>
+                    <span>HTML</span>
+
+                    <p>50%</p>
+                    <div class="b1"><div class="b3"></div></div>
+                    <span>CSS</span>
+
+                    <p>5%</p>
+                    <div class="b1"><div class="b5"></div></div>
+                    <span>JS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conhecimentos">
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                    <img src="./img/01.png" alt="">
+                    <h1>Web</h1>
+
+                    <p>Meu nome é Ariel silva e desenvolvo sites responsivos. Ajudando empresas e comercios  para dar maior visibilidade ao seu negócio, Não perca tempo cresça seu negócio. 
+                    </p>. 
+                         
+                    <button><a href="#contato">Contrate-me</a></button>
+                </label>
+
+                <label class="card" for="item-2" id="song-2">
+                    <img src="./img/04.png" alt="">
+                    <h1>Games</h1>
+                    <p>Minha primeira experiencia com gemes foi no curso do (CPDI) Comitê para Democratização da Informática, fui desenvolvendo games no Construct um app de criar games, e hoje estudo Lua uma linguagem de programação de games.</p>
+                    <button><a href="#contato">Contrate-me</a></button>
+                </label>
+                
+                <label class="card" for="item-3" id="song-3">
+                    <img src="./img/02.png" alt="">
+                    <h1>Projetos</h1>
+                    <p>Sente-se pegue um café, Estou desenvolvendo os projetos ainda</p>
+                    <button> <a target="_blank" href="https://github.com/ArielSilva660"> Github</a></button>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="content-contato">
+                <div class="contato-left">
+                    <h1>Entre em contato comigo</h1>
+                    <div class="linha"></div>
+                    <span><ion-icon name="mail-outline"></ion-icon>arielsilva6601@gmail.com</span>
+                    <span><ion-icon name="call-outline"></ion-icon>+55 48 8494-9614</span>      
+                    <span><ion-icon name="location-outline"></ion-icon>SC-são José</span>
+                </div>
+                <div class="contato-right">
+                    <h1>Preencha o formulário</h1>
+                    <div class="linha"></div>
+                    <input type="email" placeholder="E-mail">
+                    <input type="text" placeholder="Name">
+                    <textarea placeholder="Mensagem"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>© 2022 arielsilva.com</span>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-mobile").click(function(){
+                $(".menu-mobile").slideToggle("slow")
+            })
+        })
+    </script>
+</body>
+</html> 
